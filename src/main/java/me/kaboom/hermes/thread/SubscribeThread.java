@@ -4,6 +4,7 @@ import me.kaboom.hermes.Hermes;
 import me.kaboom.hermes.model.PacketPubSub;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPubSub;
+import redis.clients.jedis.exceptions.JedisConnectionException;
 
 public class SubscribeThread {
 
@@ -15,8 +16,10 @@ public class SubscribeThread {
                         String channel = "Hermes:Global";
                         jedis.subscribe(pubSub, channel);
                     }
-                } catch (Exception var15) {
-                    var15.printStackTrace();
+                } catch (JedisConnectionException ex){
+                    // nothing since we already connected once this is not important - Ian
+                } catch (Exception ex) {
+                    ex.printStackTrace();
                 }
 
         }, "Hermes - Packet Subscription Thread");

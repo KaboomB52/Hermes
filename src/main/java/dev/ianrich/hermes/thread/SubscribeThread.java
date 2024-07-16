@@ -1,7 +1,7 @@
-package me.kaboom.hermes.thread;
+package dev.ianrich.hermes.thread;
 
-import me.kaboom.hermes.Hermes;
-import me.kaboom.hermes.model.PacketPubSub;
+import dev.ianrich.hermes.Hermes;
+import dev.ianrich.hermes.model.PacketPubSub;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPubSub;
 import redis.clients.jedis.exceptions.JedisConnectionException;

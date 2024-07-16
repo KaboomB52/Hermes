@@ -1,4 +1,4 @@
-package me.kaboom.hermes.model;
+package dev.ianrich.hermes.model;
 
 import redis.clients.jedis.Jedis;
 

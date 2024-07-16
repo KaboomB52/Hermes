@@ -1,6 +1,6 @@
-package me.kaboom.hermes.model;
+package dev.ianrich.hermes.model;
 
-import me.kaboom.hermes.Hermes;
+import dev.ianrich.hermes.Hermes;
 import redis.clients.jedis.JedisPubSub;
 
 public class PacketPubSub extends JedisPubSub {

@@ -1,8 +1,8 @@
-package me.kaboom.hermes;
+package dev.ianrich.hermes;
 
 import com.google.gson.Gson;
-import me.kaboom.hermes.model.*;
-import me.kaboom.hermes.thread.SubscribeThread;
+import dev.ianrich.hermes.model.*;
+import dev.ianrich.hermes.thread.SubscribeThread;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;

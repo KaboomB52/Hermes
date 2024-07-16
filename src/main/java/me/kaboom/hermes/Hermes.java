@@ -55,6 +55,12 @@ public class Hermes {
         });
     }
 
+    public String getData(String key){
+        return runRedisCommand(r -> {
+            return r.get(key);
+        });
+    }
+
     public Boolean ifExists(String key){
         return runRedisCommand(r -> r.exists(key));
     }
